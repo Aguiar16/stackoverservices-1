@@ -1,0 +1,42 @@
+LXC
+Docker
+rkt
+ZooKeeper
+Eureka
+etcd
+Synapse
+Consul
+Graphite
+InfluxDB
+Sensu
+cAdvisor
+Prometheus
+Mesos
+Kubernetes
+Docker Swarm
+Amazon Elastic Container Service
+Nomad
+Finagle
+Hystrix
+Proxygen
+Resilience4j
+Ansible
+Drone
+Spinnaker
+Amazon Web Services CodePipeLine
+Otter
+Chaos Monkey
+Simian Army
+Pumba
+Chaos Tollkit
+SmartStack
+Prana
+Envoy
+Amazon Web Services Lambda
+Azure Functions
+Google Cloud Functions
+OpenWhisk
+Spring Cloud Function
+Linkerd
+Istio
+Conduit

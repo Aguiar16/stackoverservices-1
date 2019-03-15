@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="icon" href="http://getbootstrap.com/favicon.ico">-->
+
+    <title>stackoverservices</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-3.3.2-dist/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index_arquivos/justified-nav.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+   
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   <script type='text/javascript' src='bootstrap-3.3.2-dist/js/jquery.min.js'></script>
+    
+  <script type="text/javascript">
+    jQuery(document).ready(function($) { 
+    $(".scroll").click(function(event){        
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 400);
+        $('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+        $(window).scroll(function(){
+
+            var topo = $('.jumbotron').height() + 81; // altura do topo
+            var scrollTop = $(window).scrollTop(); // qto foi rolado a barra
+            var tamPagina = $(document).height(); // altura da página
+            var larPagina = $(document).width(); // altura da página
+            var larguraMenu = $('#menu').width();
+
+            if((2 * larguraMenu) < larPagina){ //movimenta o menu apenas se o modo mobile não estiver ativo
+
+              if(scrollTop > topo){
+                  $('#menu').css({'width' : larguraMenu+'px', 'position' : 'absolute', 'z-index':'9','margin-top' : scrollTop - (topo-5)});
+              }else{
+                  $('#menu').css({'position' : 'relative', 'margin-top' : 0});
+              }               
+            }
+
+        });
+    });
+  </script>
+
+  </head>
+
+  <body id="topo">
+
+    <div class="container">
+      <!--
+      <div class="masthead">
+        <h3 class="text-muted">Project name</h3>
+        <nav>
+          <ul class="nav nav-justified">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div> -->
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+        <p class="creditos">Replication package and supporting information for the paper</p>
+        <h3>We Need to Talk About Microservices: An Analysis from the Discussions on StackOverflow</h3>
+        <hr />
+        <p class="text">By Alan Bandeira, Carlos Alberto, <a href="http://www0.cs.ucl.ac.uk/staff/m.paixao/" target="_blank">Matheus Paixao</a> and Paulo Henrique Maia</a>
+      </div>
+
+
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-lg-2">
+          
+          
+            <ul id="menu" class="nav nav-pills nav-stacked bg-info">
+                  <li class="active"><a href="#topo" class="scroll"><span class="glyphicon glyphicon-home"></span>  Contents</a></li>
+                  <li><a href="#abstract" class="scroll"><i class="fa fa-list-alt fa-fw"></i>1 - Abstract</a></li>
+                  <li><a href="#preprint" class="scroll"><i class="fa fa-file-o fa-fw"></i>2 - Preprint</a></li>
+                  <li><a href="#data" class="scroll"><i class="fa fa-file-o fa-fw"></i>3 - Data</a></li>
+                  <li><a href="#code" class="scroll"><i class="fa fa-bar-chart-o fa-fw"></i>4 - Code</a></li>
+            </ul><br/>
+        
+        </div>
+        <div class="col-lg-10">
+
+          <h2 id="abstract">1 - Abstract</h2>
+          <p>
+            Microservices  are  a  new  and  rapidly  growing  architectural  
+            model  aimed  at  developing  highly  scalable  software
+            solutions based on independently deployable and evolvable components.  
+            Due  to  its  novelty,  microservice-related  discussions  are
+            increasing  in  Q&A  websites,  such  as  StackOverflow  (SO).  In
+            order to understand what is being discussed by the microservice
+            community,  this  work  has  applied  mining  techniques  and  topic
+            modelling  to  a  manually-curated  dataset  of  1,043  microservice-
+            related  posts  from  StackOverflow.  As  a  result,  we  found  that
+            13.68%  of  microservice  technical  posts  on  SO  discuss  a  single
+            technology: Netflix Eureka. Moreover, buzzwords in the microservice  
+            ecosystem,  e.g.,  blue/green  deployment,  were  not  identified
+            as  relevant  subjects  of  discussion  on  SO.  Finally,  we  show  how
+            a high discussion rate on SO may not reflect the popularity of a
+            certain  subject  within  the  microservice  community.
+          </p>
+          <p><b>Keywords:</b> Microservices, StackOverflow, Topic Modelling
+          </p>
+          <hr/>
+         
+         <h2 id="preprint">2 - Preprint</h2>
+               A preprint version of the paper is available <a href="" target="_blank">here</a>.
+          <hr/>
+
+         <h2 id="data">3 - Data</h2>
+               In this section, we make available the intermediate results and outputs from our experimental methdology as described in the paper.
+
+         <h4>Phase 1: Identification of Relevant Discussions</h4>
+            <a href="files/microservices_tagged_questions_answers.zip">Questions and answers with the 'microservices' tag</a><br>
+            <a href="" target="_blank">Discussions derived from the questions</a><br>
+            <a href="" target="_blank">Relevant discussions filtered by popularity</a>
+
+         <h4>Phase 2: Classification of Discussions</h4>
+            <a href="files/original_technologies.txt" target="_blank">Initial set of microservices technologies</a><br>
+            <a href="files/final_technologies.txt" target="_blank">Final set of microservices technologies</a><br>
+            <a href="" target="_blank">Set of technical discussions</a><br>
+            <a href="" target="_blank">Set of conceptual discussions</a><br>
+            <a href="" target="_blank">Set of non-related discussions</a><br>
+
+         <h4>Phase 3: Topic Modelling</h4>
+            <a href="files/pre_processed_technical_discussions.zip">Set of pre-processed technical discussions</a><br>
+            <a href="files/pre_processed_conceptual_discussions.zip">Set of pre-processed conceptual discussions</a><br>
+            <a href="files/topics.zip">Raw topics computed by the LDA topic modelling</a><br>
+          <hr/>
+
+         <h2 id="code">4 - Code</h2>
+
+            The source code we employed in our analysis is available on the project's <a href="" target="_blank">github</a><br>.
+
+      <!-- Site footer -->
+      <footer class="footer">
+        <p>March 2019 (last update: March 2019) </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="index_arquivos/ie10-viewport-bug-workaround.js"></script>
+  
+
+</body></html>

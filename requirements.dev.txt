@@ -1,0 +1,10 @@
+google-cloud-bigquery
+numpy
+pandas
+seaborn
+bokeh
+argparse
+openpyxl
+pygal
+cairosvg
+spacy

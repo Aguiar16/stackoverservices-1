@@ -1,0 +1,16 @@
+{
+	"columns": ["Id", "Title", "CreationDate", "Tags", "AnswerCount", "ViewCount", "CommentCount", "FavoriteCount", "Score", "Body"],
+    "filters": [
+    	{
+    		"column": "Tags",
+    		"operator": "LIKE",
+    		"values": ["%<microservice>%"]
+		},
+		{
+			"conector": "OR",
+			"column": "Tags",
+    		"operator": "LIKE",
+    		"values": ["%<microservices>%"]
+    	}
+    ]
+}

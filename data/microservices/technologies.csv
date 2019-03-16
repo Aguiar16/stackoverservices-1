@@ -1,0 +1,75 @@
+Tool,Category
+LXC	container engine
+Docker,container engine
+rkt,container engine
+ZooKeeper,service discovery
+Eureka,service discovery
+etcd,service discovery
+Synapse,service discovery
+Consul,service discovery
+Graphite,monitoring
+InfluxDB,monitoring
+Sensu,monitoring
+cAdvisor,monitoring
+Prometheus,monitoring
+Mesos,container orchestration
+Kubernetes,container orchestration
+Docker Swarm,container orchestration
+Amazon Elastic Container Service,container orchestration
+ECS,container orchestration
+EC2,container orchestration
+ECS2,container orchestration
+Nomad,container orchestration
+Finagle,fault tolerance
+Hystrix,fault tolerance
+Proxygen,fault tolerance
+Resilience4j,fault tolerance
+Ansible,continuous delivery
+Drone,continuous delivery
+Spinnaker,continuous delivery
+Amazon Web Services CodePipeLine,continuous delivery
+Otter,continuous delivery
+Chaos Monkey,chaos engineering
+Simian Army,chaos engineering
+Pumba,chaos engineering
+Chaos Tollkit,chaos engineering
+SmartStack,sidecar
+Prana,sidecar
+Envoy,sidecar
+Amazon Web Services Lambda,serverless computing
+Azure Functions,serverless computing
+Google Cloud Functions,serverless computing
+OpenWhisk,serverless computing
+Spring Cloud Function,serverless computing
+Linkerd,service mesh
+Istio,service mesh
+Conduit,service mesh
+RabbitMQ,message broker
+Zuul,api gateway
+Amazon Simple Queue Service,microservices communication pub/sub pattern
+SQS,microservices communication pub/sub pattern
+Amazon Simple Notification Service,microservices communication pub/sub pattern
+SNS,microservices communication pub/sub pattern
+Pact,Test Tool
+Service Fabric,Architecture as a Service
+Azure Service Bus,
+Azure Storage Queues,
+Seneca,toolkit
+Kong,API Gateway
+JHipster,Framework
+Falcon,Framework
+Lagom,Framework
+Fabric8,integrated development platform
+OKD,Kubernetes distribution
+OpenShift,Container Platform
+microprofile,development tool
+go kit,toolkit
+MSF4J,Framework
+Crossbar,networking platform
+Eventuate,distributed data management
+falcor,Routing platform
+fleet microservice cluster,container orchestration
+netflix conductor,orchestration engine
+lumen,framework
+studio,framework
+Axon Framework,development platform

@@ -1,0 +1,18 @@
+{
+    "columns": ["Id", "OwnerUserId"],
+    "filters": [
+    	{
+    		"column": "Tags",
+    		"operator": "LIKE",
+    		"values": ["%<microservice>%"]
+		},
+		{
+			"conector": "OR",
+			"column": "Tags",
+    		"operator": "LIKE",
+    		"values": ["%<microservices>%"]
+    	}
+    ]
+}
+
+"Title", "CreationDate", "Tags", "AnswerCount", "ViewCount", "CommentCount", "FavoriteCount", "Score", "Body"

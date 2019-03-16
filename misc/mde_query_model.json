@@ -1,0 +1,13 @@
+{
+    "columns": [
+        "Id", "Title", "Tags", "CreationDate", "AnswerCount", "ViewCount",
+        "CommentCount", "FavoriteCount", "Score", "Body"
+    ],
+    "filters": [
+    	{
+    		"column": "Tags",
+    		"operator": "LIKE",
+    		"values": ["%<papyrus>%"]
+        }
+    ]
+}
